@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editRut"
+        android:hint="Rut"
+        android:inputType="textCapWords">
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editNombre"
+        android:layout_below="@+id/editRut"
+        android:hint="Nombre"
+        android:singleLine="true"
+        android:inputType="textCapWords"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editApellido"
+        android:layout_below="@+id/editNombre"
+        android:hint="Apellido"
+        android:singleLine="true"
+        android:inputType="textCapWords"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editApellido"
+        android:id="@+id/editMail"
+        android:hint="Mail"
+        android:singleLine="true"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editMail"
+        android:id="@+id/editTelefono"
+        android:inputType="phone"
+        android:maxLength="12"
+        android:clickable="true"
+        android:hint="Teléfono" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editTelefono"
+        android:id="@+id/saveBtn"
+        android:text="Guardar" />
+
+</LinearLayout>
