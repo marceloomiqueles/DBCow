@@ -4,11 +4,11 @@ android {
     compileSdkVersion 20
     buildToolsVersion '20.0.0'
     defaultConfig {
-        applicationId "com.example.marcelomiqueles.dbcow"
+        applicationId 'com.example.marcelomiqueles.dbcow'
         minSdkVersion 16
         targetSdkVersion 20
-        versionCode 1
-        versionName "1.0"
+        versionCode 2
+        versionName '1.1'
     }
     buildTypes {
         release {
@@ -22,4 +22,5 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/opencsv-3.3.jar')
 }
